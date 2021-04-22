@@ -13,8 +13,8 @@ def create_tables():
     conn = None
     try:
         # connect to the PostgreSQL server
-        conn = psycopg2.connect(dbname="d9p0qicl7pm3vq", host="ec2-176-34-222-188.eu-west-1.compute.amazonaws.com",
-                             user="lokvtsuxecycfi", password="bf7217b8d02ceac97a86dd48d5f6a3d3e68fceb7917f22e82eb422157b240a90", sslmode='require')
+        conn = psycopg2.connect(dbname="your-db-name", host="host",
+                             user="user", password="pass", sslmode='require')
         cur = conn.cursor()
         # create table one by one
         cur.execute(command)
